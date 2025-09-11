@@ -1,26 +1,26 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 export default function Footer() {
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle newsletter signup
-    console.log('Newsletter signup:', email)
-    setEmail('')
-  }
+    console.log("Newsletter signup:", email);
+    setEmail("");
+  };
 
   return (
     <footer className="relative">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
+        <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/d6118c6b174911c925a84bf9e359a68e3155d16f?width=2800"
           alt="Grass background"
           className="w-full h-full object-cover"
         />
       </div>
-      
+
       {/* Newsletter Section */}
       <div className="relative bg-gradient-to-r from-dbo-dark via-dbo-medium to-dbo-dark bg-opacity-90 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-8 lg:px-16 text-center">
@@ -28,12 +28,12 @@ export default function Footer() {
           <h2 className="text-white font-bold text-4xl lg:text-6xl leading-tight tracking-tight mb-6">
             Get on the list
           </h2>
-          
+
           {/* Subtitle */}
           <p className="text-white/55 font-medium text-lg lg:text-2xl leading-relaxed max-w-4xl mx-auto mb-12">
             Join our list and be the first to hear about product updates.
           </p>
-          
+
           {/* Newsletter Form */}
           <form onSubmit={handleSubmit} className="max-w-md mx-auto flex gap-4">
             <input
@@ -53,7 +53,7 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      
+
       {/* Copyright */}
       <div className="relative bg-gradient-to-r from-dbo-dark via-dbo-medium to-dbo-dark border-t border-white/15">
         <div className="max-w-7xl mx-auto px-8 lg:px-16 py-8">
@@ -65,5 +65,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

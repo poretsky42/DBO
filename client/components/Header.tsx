@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'The DBO Process', href: '#' },
-    { name: 'Tag My Home', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Our Team', href: '#' }
-  ]
+    { name: "The DBO Process", href: "#" },
+    { name: "Tag My Home", href: "#" },
+    { name: "Marketplace", href: "#" },
+    { name: "Our Team", href: "#" },
+  ];
 
   return (
     <header className="bg-white shadow-lg relative z-50">
@@ -17,9 +17,9 @@ export default function Header() {
         <div className="flex items-center justify-between h-32 px-8 lg:px-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img 
+            <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a0e226544e3568075ca8d26083287ac9e1bf1610?width=439"
-              alt="DBO Logo" 
+              alt="DBO Logo"
               className="h-28 w-auto"
             />
           </div>
@@ -71,5 +71,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }
