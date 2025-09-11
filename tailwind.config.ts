@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // DBO Brand Colors
+        dbo: {
+          'dark': '#16404E',
+          'medium': '#3C786C',
+          'light-bg': '#F8FCF4',
+          'green': '#274F31',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
